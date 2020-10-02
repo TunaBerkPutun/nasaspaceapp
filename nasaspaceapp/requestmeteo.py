@@ -10,7 +10,7 @@ enddate_ts = startdate_ts + dt.timedelta(days=1)
 interval_ts = dt.timedelta(hours=1)
 
 coordinates_ts = [(47.25,9.34), (30,-4)]
-parameters_ts = ['t_2m:C', 'precip_1h:mm', "wind_speed_10m:ms","wind_dir_10m:d" ,"msl_pressure:hPa"]
+parameters_ts = ['t_2m:C', "forest_fire_warning:idx", "fosberg_fire_weather_index:idx", 'precip_1h:mm', "wind_speed_10m:ms","wind_dir_10m:d" ,"msl_pressure:hPa"]
 
 
 print("time series:")
