@@ -7,7 +7,7 @@ class HomeDrawer extends StatelessWidget {
       child: Column(
         children: [
           AppBar(
-            title: Text("Catch The Fire!"),
+            title: Text("Flameseeker"),
           ),
           ListTile(
             leading: Icon(Icons.home),

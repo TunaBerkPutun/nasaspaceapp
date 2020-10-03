@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
             children: [
               SleekProgressIndicator(
                 data: "Humidity",
-                initValue: 25,
+                initValue: 60,
                 reverse: 0,
                 dataMin: 0,
                 dataMax: 100,
