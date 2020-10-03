@@ -36,7 +36,7 @@ class HomeDrawer extends StatelessWidget {
           Divider(),
           ListTile(
             leading: Icon(Icons.message),
-            title: Text("Messages"),
+            title: Text("Notifications"),
             onTap: () {
               Navigator.of(context).pushReplacementNamed("/message-screen");
             },

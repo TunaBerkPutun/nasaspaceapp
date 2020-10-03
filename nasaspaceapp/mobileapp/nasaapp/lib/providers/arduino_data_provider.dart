@@ -1,0 +1,65 @@
+var placeholderSensorStatusList = [
+  [
+    "OK",
+    "OK",
+    "OK",
+  ],
+  [
+    "OK",
+    "OK",
+    "OK",
+  ],
+  [
+    "OK",
+    "OK",
+    "OK",
+  ],
+  [
+    "OK",
+    "OK",
+    "WARNING",
+  ],
+  [
+    "OK",
+    "OK",
+    "OK",
+  ],
+  [
+    "OK",
+    "OK",
+    "OK",
+  ],
+  [
+    "OK",
+    "OK",
+    "OK",
+  ],
+  [
+    "OK",
+    "WARNING",
+    "OK",
+  ],
+  [
+    "OK",
+    "OK",
+    "OK",
+  ],
+  [
+    "CRITICAL",
+    "CRITICAL",
+    "CRITICAL",
+  ],
+];
+
+var mainStatus = [
+  "OK",
+  "OK",
+  "OK",
+  "WARNING",
+  "OK",
+  "OK",
+  "OK",
+  "WARNING",
+  "OK",
+  "CRITICAL",
+];
