@@ -100,6 +100,7 @@ class _SleekProgressIndicatorState extends State<SleekProgressIndicator> {
                         "STATUS: ${widget.status}",
                         style: TextStyle(
                           fontSize: 26,
+                          color: Colors.green,
                         ),
                       ),
                     ),

@@ -19,53 +19,81 @@ class SensorListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: CircleAvatar(
-        backgroundColor: statusColor(status),
-        child: Text(
-          id,
-          style: TextStyle(color: Colors.white),
+    return Card(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      elevation: 5,
+      child: ListTile(
+        leading: CircleAvatar(
+          backgroundColor: statusColor(status),
+          child: Text(
+            id,
+            style: TextStyle(color: Colors.white),
+          ),
         ),
-      ),
-      title: Text(
-        "Status: $status",
-        style: TextStyle(
-          color: statusColor(status),
-          fontSize: 22,
+        title: Text(
+          "Status: $status",
+          style: TextStyle(
+            color: statusColor(status),
+            fontSize: 22,
+          ),
         ),
-      ),
-      subtitle: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            "Hum:${sensorStats[0]}",
-            style: TextStyle(
-              color: statusColor(sensorStats[0]),
+        subtitle: Row(
+          children: [
+            Container(
+              width: 105,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Hum:${sensorStats[0]}",
+                    style: TextStyle(
+                      color: statusColor(sensorStats[0]),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 2,
+                  ),
+                  Text(
+                    "Temp:${sensorStats[1]}",
+                    style: TextStyle(
+                      color: statusColor(sensorStats[1]),
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
-          SizedBox(
-            width: 2,
-          ),
-          Text(
-            "Temp:${sensorStats[1]}",
-            style: TextStyle(
-              color: statusColor(sensorStats[1]),
+            SizedBox(
+              width: 10,
             ),
-          ),
-          SizedBox(
-            width: 2,
-          ),
-          Text(
-            "Fire:${sensorStats[2]}",
-            style: TextStyle(
-              color: statusColor(sensorStats[2]),
-            ),
-          ),
-        ],
-      ),
-      trailing: IconButton(
-        icon: Icon(Icons.refresh),
-        onPressed: () {},
+            Container(
+              width: 110,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Fire:${sensorStats[2]}",
+                    style: TextStyle(
+                      color: statusColor(sensorStats[2]),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 2,
+                  ),
+                  Text(
+                    "Smoke:${sensorStats[3]}",
+                    style: TextStyle(
+                      color: statusColor(sensorStats[3]),
+                    ),
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
+        trailing: IconButton(
+          icon: Icon(Icons.expand_more),
+          onPressed: () {},
+        ),
       ),
     );
   }

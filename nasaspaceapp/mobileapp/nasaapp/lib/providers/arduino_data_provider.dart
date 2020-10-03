@@ -3,13 +3,16 @@ var placeholderSensorStatusList = [
     "OK",
     "OK",
     "OK",
-  ],
-  [
-    "OK",
-    "OK",
     "OK",
   ],
   [
+    "OK",
+    "OK",
+    "OK",
+    "OK",
+  ],
+  [
+    "OK",
     "OK",
     "OK",
     "OK",
@@ -18,18 +21,22 @@ var placeholderSensorStatusList = [
     "OK",
     "OK",
     "WARNING",
-  ],
-  [
-    "OK",
-    "OK",
     "OK",
   ],
   [
     "OK",
     "OK",
     "OK",
+    "OK",
   ],
   [
+    "OK",
+    "OK",
+    "OK",
+    "OK",
+  ],
+  [
+    "OK",
     "OK",
     "OK",
     "OK",
@@ -38,13 +45,16 @@ var placeholderSensorStatusList = [
     "OK",
     "WARNING",
     "OK",
-  ],
-  [
-    "OK",
-    "OK",
     "OK",
   ],
   [
+    "OK",
+    "OK",
+    "OK",
+    "OK",
+  ],
+  [
+    "CRITICAL",
     "CRITICAL",
     "CRITICAL",
     "CRITICAL",

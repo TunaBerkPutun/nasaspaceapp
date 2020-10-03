@@ -49,6 +49,8 @@ flutter:
 
   assets:
     - assets/images/loginbackground.png
+    - assets/icons/drone.png
+    - assets/icons/droneoutline.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

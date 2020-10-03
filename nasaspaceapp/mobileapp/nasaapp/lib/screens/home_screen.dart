@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
                 dataMin: 0,
                 dataMax: 100,
                 unit: "%",
-                status: "deneme",
+                status: "OK",
                 updateTime: dateTime,
               ),
               SleekProgressIndicator(
@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
                 dataMin: -30,
                 dataMax: 60,
                 unit: "C",
-                status: "deneme",
+                status: "OK",
                 updateTime: dateTime,
               ),
               SleekProgressIndicator(
@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                 dataMin: 0,
                 dataMax: 20,
                 unit: "m/s",
-                status: "deneme",
+                status: "OK",
                 updateTime: dateTime,
               ),
             ],
