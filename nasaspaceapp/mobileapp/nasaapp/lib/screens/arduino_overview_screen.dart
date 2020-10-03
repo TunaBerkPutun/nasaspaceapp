@@ -11,16 +11,24 @@ class ArduinoOverviewScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Sensor Overview"),
+        actions: [
+          IconButton(icon: Icon(Icons.info_outline), onPressed: () {}),
+        ],
       ),
       drawer: HomeDrawer(),
-      body: Container(
-        margin: EdgeInsets.symmetric(horizontal: 5, vertical: 10),
-        child: ListView.builder(
-          itemCount: 10,
-          itemBuilder: (context, index) => SensorListTile(
-              (index + 7000).toString(),
-              mainStatus[index],
-              placeholderSensorStatusList[index]),
+      body: RefreshIndicator(
+        onRefresh: () {
+          return Future(null);
+        },
+        child: Container(
+          margin: EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+          child: ListView.builder(
+            itemCount: 10,
+            itemBuilder: (context, index) => SensorListTile(
+                (index + 7000).toString(),
+                mainStatus[index],
+                placeholderSensorStatusList[index]),
+          ),
         ),
       ),
     );

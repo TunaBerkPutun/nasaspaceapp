@@ -11,6 +11,9 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Home"),
+        actions: [
+          IconButton(icon: Icon(Icons.info_outline), onPressed: () {}),
+        ],
       ),
       drawer: HomeDrawer(),
       body: SingleChildScrollView(
@@ -19,7 +22,7 @@ class HomeScreen extends StatelessWidget {
             children: [
               SleekProgressIndicator(
                 data: "Humidity",
-                initValue: 35,
+                initValue: 25,
                 reverse: 0,
                 dataMin: 0,
                 dataMax: 100,

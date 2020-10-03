@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:nasaapp/widgets/home_drawer.dart';
 
-class MessagesScreen extends StatelessWidget {
-  static const routeName = "/messages-screen";
+class NotificationsScreen extends StatelessWidget {
+  static const routeName = "/notifications-screen";
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Notifications"),
+        actions: [
+          IconButton(icon: Icon(Icons.info_outline), onPressed: () {}),
+        ],
+      ),
+      drawer: HomeDrawer(),
+      body: Container(),
+    );
   }
 }

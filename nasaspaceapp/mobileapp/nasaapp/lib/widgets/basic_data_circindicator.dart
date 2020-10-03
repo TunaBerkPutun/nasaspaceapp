@@ -91,22 +91,27 @@ class _SleekProgressIndicatorState extends State<SleekProgressIndicator> {
                 width: 20,
               ),
               Container(
+                width: 175,
                 margin: EdgeInsets.only(top: 15),
                 child: Column(
                   children: [
-                    Text(
-                      "STATUS: ${widget.status}",
-                      style: TextStyle(
-                        fontSize: 26,
+                    FittedBox(
+                      child: Text(
+                        "STATUS: ${widget.status}",
+                        style: TextStyle(
+                          fontSize: 26,
+                        ),
                       ),
                     ),
                     SizedBox(
                       height: 10,
                     ),
-                    Text(
-                      "Last updated: ${widget.updateTime}",
-                      style: TextStyle(color: Colors.grey),
-                      textAlign: TextAlign.left,
+                    FittedBox(
+                      child: Text(
+                        "Last updated: ${widget.updateTime}",
+                        style: TextStyle(color: Colors.grey),
+                        textAlign: TextAlign.left,
+                      ),
                     )
                   ],
                 ),

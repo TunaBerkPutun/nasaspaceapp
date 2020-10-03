@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Catch The Fire!',
       theme: ThemeData(
         primarySwatch: Colors.green,
         accentColor: Colors.blue,
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         ArduinoOverviewScreen.routeName: (ctx) => ArduinoOverviewScreen(),
         DroneScreen.routeName: (ctx) => DroneScreen(),
         HomeScreen.routeName: (ctx) => HomeScreen(),
-        MessagesScreen.routeName: (ctx) => MessagesScreen(),
+        NotificationsScreen.routeName: (ctx) => NotificationsScreen(),
         SettingsScreen.routeName: (ctx) => SettingsScreen(),
         WeatherForecastScreen.routeName: (ctx) => WeatherForecastScreen(),
       },

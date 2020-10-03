@@ -31,7 +31,7 @@ class SensorListTile extends StatelessWidget {
         "Status: $status",
         style: TextStyle(
           color: statusColor(status),
-          fontSize: 20,
+          fontSize: 22,
         ),
       ),
       subtitle: Column(
