@@ -1,8 +1,8 @@
 import datetime as dt
 import meteomatics.api as api
 
-username = "_puetuen"
-password = "7fcPpHIVl8y4S"
+username = "******"
+password = "******"
 
 now = dt.datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0)
 startdate_ts = now
