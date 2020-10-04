@@ -4,8 +4,8 @@ import datetime as dt
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-USERNAME = "roboun_erkan"
-PASSWORD = "Us5OWNh4B8xmd"
+USERNAME = "********"
+PASSWORD = "********"
 
 fires = [
     [35.38, -120.45, 2020, 8, 1, 2020, 8, 8, "Pond"],
